@@ -1,0 +1,35 @@
+﻿<Page
+    x:Class="LibraryDisplay.Rent"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LibraryDisplay"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="RentMainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="rentItemBtn" Content="Rent" Grid.Row="2" Grid.Column="1" 
+                    ToolTipService.ToolTip="Note! After clicking the book will be rented !!" Click="rentItemBtn_Click"/>
+        <TextBlock x:Name="tblRent" 
+                   Text="The rental is for two weeks."
+                   Grid.Row="1" Grid.Column="0"  Height="200" Padding="7" Width="600" HorizontalTextAlignment="Left" FontSize="20"/>
+      
+        <TextBox x:Name="tbxRent" Width="200" Height="50" Grid.Column="0" Grid.Row="2" PlaceholderText="item number"
+                      BeforeTextChanging="tbxRent_BeforeTextChanging"/>
+        <TextBlock x:Name="tblRentMain" 
+                   Text="Rent Item" 
+            Grid.Row="0" Grid.Column="0"  Height="120" TextAlignment="Center" Padding="7" Width="300" HorizontalAlignment="Center" HorizontalTextAlignment="Center" FontSize="60"/>
+        <Button x:Name="MainFromRent" Content="Main" Grid.Row="0" Grid.Column="2"  Click="MainFromRent_Click" />
+
+    </Grid>
+</Page>

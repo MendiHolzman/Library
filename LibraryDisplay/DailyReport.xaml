@@ -1,0 +1,60 @@
+﻿<Page
+    x:Class="LibraryDisplay.DailyReport"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LibraryDisplay"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid x:Name="mainGridDailyReport">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Border x:Name="borInnarLinit1" Grid.Row="1" Grid.Column="0" BorderBrush="Black" BorderThickness="7"/>
+            <Border x:Name="borInnarLinit2" Grid.Row="2" Grid.Column="0" BorderBrush="Black" BorderThickness="7"/>
+            <Border x:Name="borInnarLinit3" Grid.Row="3" Grid.Column="0" BorderBrush="Black" BorderThickness="7"/>
+            <Border x:Name="borInnarLinit4" Grid.Row="4" Grid.Column="0" BorderBrush="Black" BorderThickness="7"/>
+            <Border x:Name="borInnarLinit5" Grid.Row="1" Grid.Column="1" BorderBrush="Black" BorderThickness="7"/>
+            <Border x:Name="borInnarLinit6" Grid.Row="2" Grid.Column="1" BorderBrush="Black" BorderThickness="7"/>
+            <Border x:Name="borInnarLinit7" Grid.Row="3" Grid.Column="1" BorderBrush="Black" BorderThickness="7"/>
+            <Border x:Name="borInnarLinit8" Grid.Row="4" Grid.Column="1" BorderBrush="Black" BorderThickness="7"/>
+
+            <Button x:Name="MainFromDailyReport" Content="Main" Grid.Row="0" Grid.Column="1" Click="MainFromDailyReport_Click"/>
+            <TextBlock Name="tbldailyReport" Text="Daily report for date: "  Grid.Column="0" Grid.Row="0" FontSize="25" Height="170" Width="700"/>
+        <Border BorderBrush="{x:Null}" Height="50" Grid.Column="1" Grid.Row="1">
+            <TextBlock Name="tblTotalProductsShow" Text=""  HorizontalTextAlignment="Center" Grid.Column="1" Grid.Row="1" FontSize="25" VerticalAlignment="Top" />
+        </Border>
+        <Border BorderBrush="{x:Null}" Height="50" Grid.Column="0" Grid.Row="2">
+            <TextBlock Name="tblTotalBooks" Text="Total books" Grid.Column="0" Grid.Row="2" FontSize="25" VerticalAlignment="Top" />
+        </Border>
+        <Border BorderBrush="{x:Null}" Height="50" Grid.Column="0" Grid.Row="3">
+            <TextBlock Name="tblTotalMagazines" Text="Total magazines" Grid.Column="0" Grid.Row="3" FontSize="25" />
+        </Border>
+        <Border BorderBrush="{x:Null}" Height="50" Grid.Column="1" Grid.Row="3">
+            <TextBlock Name="tblTotalMagazinesShow" Text=""  Grid.Column="1" Grid.Row="3" FontSize="25" />
+        </Border>
+            
+            <Border BorderBrush="{x:Null}" Height="50" Grid.Column="0" Grid.Row="4">
+            <TextBlock Name="tblTotalBorrowedProducts" Text="Total borrowed products" HorizontalAlignment="Center"   Grid.Column="0" Grid.Row="4"  FontSize="25" />
+        </Border>
+
+        <Border BorderBrush="{x:Null}" Height="50" Grid.Column="1" Grid.Row="4">
+            <TextBlock Name="tblTotalBorrowedProductsShow" Text="" HorizontalAlignment="Center" TextAlignment="Left" Grid.Column="1" Grid.Row="2"  FontSize="25" />
+        </Border>
+        <Border BorderBrush="{x:Null}" Height="50" Grid.Column="1" Grid.Row="2">
+            <TextBlock Name="tblTotalBooksShow" Text=""  Grid.Column="1" Grid.Row="2" FontSize="25" />
+        </Border>
+        <Border BorderBrush="{x:Null}" Height="50" Grid.Column="0" Grid.Row="1">
+            <TextBlock Name="tblTotalProducts" Text="Total products" Grid.Column="0" Grid.Row="1" FontSize="25" />
+        </Border>
+    </Grid>
+</Page>

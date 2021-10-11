@@ -1,0 +1,39 @@
+﻿<Page
+    x:Class="LibraryDisplay.Search"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LibraryDisplay"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid x:Name="mainGridSearch">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="tblShowRes" Height="950" Padding="12" Grid.Row="0" Grid.Column="1"  FontSize="12" Width="700" HorizontalTextAlignment="Left"/>
+        <Grid x:Name="GridSearch2">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="MainFromSearch" Content="Main" Grid.Row="3" Grid.Column="0" Click="MainFromSearch_Click_1"  />
+        <TextBlock x:Name="tblSearchBy" Height="60" Text="Search By..." Grid.Row="0" Grid.Column="0" FontSize="40"/>
+        <Button x:Name="byName" Content="by Name" Grid.Row="0" Grid.Column="1" Click="byName_Click" />
+        <Button x:Name="byAuthor" Content="by Author" Grid.Row="1" Grid.Column="1" Click="byAuthor_Click" />
+        <Button x:Name="byGenre" Content="by Genre" Grid.Row="2" Grid.Column="1" Click="byGenre_Click" />
+        <Button x:Name="byBookPublishing" Content="by Book Publishing" Grid.Row="3" Grid.Column="1" Click="byBookPublishing_Click" Width="200"  />
+        <TextBox x:Name="tbxSearch" Grid.Column="0" Grid.Row="1" HorizontalTextAlignment="Left" Height="200" Width="300" Padding="7" PlaceholderText="Write here Text to search" BeforeTextChanging="tbxSearch_BeforeTextChanging"/>
+    </Grid>
+    </Grid>
+</Page>

@@ -1,0 +1,45 @@
+﻿<Page
+    x:Class="LibraryDisplay.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LibraryDisplay"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:muxc="using:Windows.UI.Xaml.Controls"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="MainGrid">
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="titel" Text="Welcome to the library!" Grid.Row="0" Grid.Column="0" Width="700" Height="80" FontSize="50"/>
+        <Button x:Name="AddItem" Visibility="Collapsed" Content="Add item" Grid.Row="6" Grid.Column="1" Click="AddItem_Click"/>
+        <Button x:Name="DeleteItem" Visibility="Collapsed" Content="Delete item" Grid.Row="3" Grid.Column="1" Click="DeleteItem_Click"/>
+        <Button x:Name="showAll" Content="Show all items" Grid.Row="1" Grid.Column="1" Click="ShowAll_Click"/>
+        <Button x:Name="SearchForItems"  Content="Search for items" Grid.Row="1" Grid.Column="0" Click="SearchForItems_Click" />
+        <Button x:Name="EditItem" Visibility="Collapsed" Content="Edit item" Grid.Row="5" Grid.Column="1" Click="EditItem_Click" />
+        <Button x:Name="RentItem" Content="Rent item" Grid.Row="2" Grid.Column="0" Click="RentItem_Click" />
+        <Button x:Name="dailyReport" Visibility="Collapsed" Content="daily report" Grid.Row="3" Grid.Column="0" Click="DailyReport_Click"/>
+        <Button x:Name="AddSale" Visibility="Collapsed" Content="Add sale" Grid.Row="4" Grid.Column="0" Click="AddSale_Click"/>
+        <Button x:Name="SalesScreen" Content="Sales screen" Grid.Row="4" Grid.Column="1" Click="SalesScreen_Click"/>
+        <Button x:Name="RemoveASale" Visibility="Collapsed" Content="Remove A Sale" Grid.Row="5" Grid.Column="0" Click="RemoveASale_Click"/>
+        <Button x:Name="LoginManagerbtn" IsEnabled="False" Content="Log in - Manager" Grid.Row="7" Grid.Column="1" Click="LoginManagerbtn_Click"/>
+        <Button x:Name="LogOutbtn" Content="Log out" Grid.Row="7" Grid.Column="0" Visibility="Collapsed" Click="LogOutbtn_Click"/>
+        <Button x:Name="Returnbtn" Content="Return item" Grid.Row="2" Grid.Column="1"  Click="Returnbtn_Click"/>
+        <Button x:Name="exit" Content="Exit" Grid.Row="6" Grid.Column="0"  Click="Exit_Click"/>
+        <TextBox x:Name="tbxPassword" Width="200" Height="33" Grid.Column="1" Grid.Row="6" PlaceholderText="Write the Password (770)"
+                     PlaceholderForeground="Gray" FontSize="15" BeforeTextChanging="TbxPassword_BeforeTextChanging" TextChanging="TbxPassword_TextChanging"/>
+    </Grid>
+</Page>

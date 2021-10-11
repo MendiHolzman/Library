@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="logicForLibrary.Book" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Book.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="logicForLibrary.Item" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAIAAAQAACQAAEAAAQABAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Item.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="logicForLibrary.ItemCollection" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAQAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>ItemCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="logicForLibrary.ListManagement" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQEAAAAAAAAQAAAAAAAAAAQAAAAAAI=</HashCode>
+      <FileName>ListManagement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="logicForLibrary.Magazine" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Magazine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="logicForLibrary.ManagementArea" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BEAQgAAAAAAAACBAASAAAAAAAAAFAAhZBgIAAAGQQEA=</HashCode>
+      <FileName>ManagementArea.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="logicForLibrary.Sale" Collapsed="true">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAIAAIAQEAABAAAAAABAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Sale.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="logicForLibrary.SaleList" Collapsed="true">
+    <Position X="5.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAEgEAAAAAAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>SaleList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="logicForLibrary.ServiceDefultItems" Collapsed="true">
+    <Position X="7" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAIAAAAAAAAAAAAAAAAAAAAAAACAAEAAAAAAACAA=</HashCode>
+      <FileName>ServiceDefultItems.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

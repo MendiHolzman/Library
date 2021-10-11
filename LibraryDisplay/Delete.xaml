@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="LibraryDisplay.Delete"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LibraryDisplay"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="mainGridDelete">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Name="tblDelete" Text="Delete" Width="400" Height="100" Grid.Column="0" Grid.Row="0" FontSize="60"/>
+        <TextBlock Name="tblWriteToDelete" Text="Write an item number in the library to delete" Width="600" Height="40" Grid.Column="0" Grid.Row="1"/>
+        <TextBox x:Name="tbxWriteToDelete" Width="200" Height="50" Grid.Column="0" Grid.Row="2" PlaceholderText="item number" BeforeTextChanging="tbxWriteToDelete_BeforeTextChanging"/>
+        <Button x:Name="deleteBtn" Content="Delete" Grid.Row="2" Grid.Column="1" Click="Delete_Click" />
+        <Button x:Name="MainFromDelete" Content="Main" Grid.Row="0" Grid.Column="1" Click="MainFromDelete_Click" />
+    </Grid>
+</Page>

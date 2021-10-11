@@ -1,0 +1,67 @@
+﻿<Page
+    x:Class="LibraryDisplay.Edit"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LibraryDisplay"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid x:Name="mainAddGrid">
+
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid x:Name="addGrid1" Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Name="publishingCompany" Text="publishing Company" Grid.Column="0" Grid.Row="2"/>
+                <TextBlock Name="dateOfPublication" Text="date Of Publication" Grid.Column="0" Grid.Row="1"/>
+                <TextBlock Name="genre" Text="genre" Grid.Column="0" Grid.Row="3"/>
+                <TextBlock Name="rentalPrice" Text="rental Price" Grid.Column="0" Grid.Row="4"/>
+                <TextBlock Name="author" Text="author" Grid.Column="0" Grid.Row="6"/>
+                <TextBlock Name="ItemName" Text="Item name" Grid.Column="0" Grid.Row="0"/>
+
+                <TextBox x:Name="tbxPublishingCompany" Grid.Column="1" Grid.Row="2" BeforeTextChanging="tbxItemName_BeforeTextChanging" IsEnabled="False"/>
+                <DatePicker x:Name="dpDateOfPublication" Grid.Column="1" Grid.Row="1"
+                            HorizontalAlignment="Center" Header="Date Of Publication" HorizontalContentAlignment="Center" IsEnabled="False"/>
+                <TextBox x:Name="tbxGenre" Grid.Column="1" Grid.Row="3" BeforeTextChanging="tbxItemName_BeforeTextChanging" IsEnabled="False"/>
+                <TextBox x:Name="tbxRentalPrice" Grid.Column="1" Grid.Row="4" BeforeTextChanging="tbxIndex_BeforeTextChanging" IsEnabled="False"/>
+                <TextBox x:Name="tbxAuthor" Grid.Column="1" Grid.Row="6" BeforeTextChanging="tbxItemName_BeforeTextChanging" IsEnabled="False"/>
+                <TextBox x:Name="tbxItemName" Grid.Column="1" Grid.Row="0" BeforeTextChanging="tbxItemName_BeforeTextChanging" IsEnabled="False"/>
+            </Grid>
+            <Grid x:Name="addGrid2" Grid.Row="0" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="MainFromEdit" Content="Main" Grid.Row="0" Grid.Column="1" Click="MainFromEdit_Click"   />
+                <Button x:Name="SelectedIndex" Content="Select an index" Grid.Row="2" Grid.Column="1" Click="SelectedIndex_Click"/>
+                <Button x:Name="EditItemBtn" Content="Edit" Grid.Row="3" Grid.Column="1" Click="EditItem_Click" IsEnabled="False" />
+                <TextBox x:Name="tbxIndex" Grid.Column="0" Grid.Row="1" HorizontalTextAlignment="Left" Height="60" Width="200" Padding="7" PlaceholderText="index Item" BeforeTextChanging="tbxIndex_BeforeTextChanging" />
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

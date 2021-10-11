@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="LibraryDisplay.Return"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LibraryDisplay"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="mainGridReturn" >
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="MainFromReturn" Content="Main" Grid.Row="4" Grid.Column="0" Click="MainFromReturn_Click" />
+        <Button x:Name="returnItemBtn" Content="return" Grid.Row="3" Grid.Column="0" Click="returnItemBtn_Click"/>
+        <TextBlock x:Name="mainTblReturn" 
+                   Text="Return Item" 
+            Grid.Row="0" Grid.Column="0"  Height="180" Padding="7" Width="1000" TextAlignment="Center" HorizontalAlignment="Center" HorizontalTextAlignment="Center" FontSize="60"/>
+        <TextBlock x:Name="tblReturn" 
+                   Text="" 
+            Grid.Row="1" Grid.Column="0"  Height="120" Padding="7" Width="1000" TextAlignment="Center" HorizontalAlignment="Center" HorizontalTextAlignment="Center" FontSize="20"/>
+        <TextBox x:Name="tbxReturn" Width="200" Height="50" Grid.Column="0" Grid.Row="2" PlaceholderText="item number"
+                     BeforeTextChanging="tbxReturn_BeforeTextChanging"/>
+    </Grid>
+</Page>
